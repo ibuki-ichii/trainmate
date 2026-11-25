@@ -1,1 +1,37 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TrainMate</h1>
+        <p>トレーニング管理アプリ</p>
+    </header>
+
+    <main>
+        <h2>トレーニング登録</h2>
+
+        <label>メニュー名</label>
+        <input type="text" id="menu">
+
+        <label>回数</label>
+        <input type="number" id="count" min="1">
+
+        <label>実施日</label>
+        <input type="date" id="date">
+
+        <button onclick="addTraining()">登録</button>
+
+        <h2>トレーニング一覧</h2>
+        <ul id="trainingList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
